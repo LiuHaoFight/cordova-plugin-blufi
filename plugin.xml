@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-blufi" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>
+		Blufi
+	</name>
+	<js-module name="Blufi" src="www/Blufi.js">
+		<clobbers target="Blufi" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="Blufi">
+				<param name="android-package" value="com.siemens.blufi.Blufi" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/params/BlufiConfigureParams.java" target-dir="src/com/siemens/blufi/params" />
+		<source-file src="src/android/params/BlufiParameter.java" target-dir="src/com/siemens/blufi/params" />
+		<source-file src="src/android/response/BlufiScanResult.java" target-dir="src/com/siemens/blufi/response" />
+		<source-file src="src/android/response/BlufiStatusResponse.java" target-dir="src/com/siemens/blufi/response" />
+		<source-file src="src/android/response/BlufiVersionResponse.java" target-dir="src/com/siemens/blufi/response" />
+		<source-file src="src/android/security/BlufiAES.java" target-dir="src/com/siemens/blufi/security" />
+		<source-file src="src/android/security/BlufiCRC.java" target-dir="src/com/siemens/blufi/security" />
+		<source-file src="src/android/security/BlufiDH.java" target-dir="src/com/siemens/blufi/security" />
+		<source-file src="src/android/security/BlufiMD5.java" target-dir="src/com/siemens/blufi/security" />
+		<source-file src="src/android/Blufi.java" target-dir="src/com/siemens/blufi" />
+		<source-file src="src/android/BlufiClient.java" target-dir="src/com/siemens/blufi" />
+		<source-file src="src/android/BlufiCallback.java" target-dir="src/com/siemens/blufi" />
+		<source-file src="src/android/BlufiClientImpl.java" target-dir="src/com/siemens/blufi" />
+		<source-file src="src/android/BlufiConstants.java" target-dir="src/com/siemens/blufi" />
+		<source-file src="src/android/BlufiNotifyData.java" target-dir="src/com/siemens/blufi" />
+		<source-file src="src/android/FrameCtrlData.java" target-dir="src/com/siemens/blufi" />
+	</platform>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="Blufi">
+				<param name="ios-package" value="Blufi" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/Blufi.m" />
+	</platform>
+</plugin>
