@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-blufi",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "com.siemens.blufi",
   "main": "index.js",
   "scripts": {
