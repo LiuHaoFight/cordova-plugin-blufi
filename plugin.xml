@@ -36,6 +36,29 @@
 				<param name="ios-package" value="Blufi" />
 			</feature>
 		</config-file>
+		<header-file src="src/ios/Data/BlufiFrameCtrlData.h" />
+		<source-file src="src/ios/Data/BlufiFrameCtrlData.m" />
+		<header-file src="src/ios/Data/BlufiNotifyData.h" />
+		<source-file src="src/ios/Data/BlufiNotifyData.m" />
+		<source-file src="src/ios/Response/BlufiClient.m" />
+		<source-file src="src/ios/Response/BlufiConfigureParams.m" />
+		<source-file src="src/ios/Response/BlufiConstants.m" />
+		<source-file src="src/ios/Response/BlufiScanResponse.m" />
+		<source-file src="src/ios/Response/BlufiStatusResponse.m" />
+		<source-file src="src/ios/Response/BlufiVersionResponse.m" />
+		<header-file src="src/ios/Security/BlufiDH.h" />
+		<source-file src="src/ios/Security/BlufiDH.m" />
+		<header-file src="src/ios/Security/BlufiSecurity.h" />
+		<source-file src="src/ios/Security/BlufiSecurity.m" />
 		<source-file src="src/ios/Blufi.m" />
+		<header-file src="src/ios/BlufiClient.h" />
+		<header-file src="src/ios/BlufiConfigureParams.h" />
+		<header-file src="src/ios/BlufiConstants.h" />
+		<header-file src="src/ios/BlufiScanResponse.h" />
+		<header-file src="src/ios/BlufiStatusResponse.h" />
+		<header-file src="src/ios/BlufiVersionResponse.h" />
+		<header-file src="src/ios/ESPHeaderFiles.h" />
+		<!-- openssl library -->
+		<framework src="src/ios/Security/openssl.framework" custom="true" />
 	</platform>
 </plugin>

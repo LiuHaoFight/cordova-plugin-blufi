@@ -1,5 +1,5 @@
 {
-  "name": "blufi",
+  "name": "cordova-plugin-blufi",
   "version": "1.0.0",
   "description": "com.siemens.blufi",
   "main": "index.js",
@@ -10,5 +10,13 @@
     "blufi"
   ],
   "author": "simon",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiuHaoFight/cordova-plugin-blufi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LiuHaoFight/cordova-plugin-blufi/issues"
+  },
+  "homepage": "https://github.com/LiuHaoFight/cordova-plugin-blufi#readme"
 }
